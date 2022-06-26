@@ -13,11 +13,6 @@ public class App {
         System.out.println("inserisci il secondo numero");
         int val2 = scanner.nextInt();
 
-        if(val1 < val2){
-            System.out.println(val1);
-        }
-        else{
-            System.out.println(val2);
-        }
+        System.out.println(Math.min(val1, val2));
     }
 }
