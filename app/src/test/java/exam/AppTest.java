@@ -5,6 +5,9 @@ package exam;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.RepeatedTest;
 
 class AppTest {
     @Test void firstLower() {
@@ -31,5 +34,20 @@ class AppTest {
     public void testConcat_EmptyNonEmpty()
     {
         assertEquals("abcabc", NON_EMPTY.concat(NON_EMPTY));
+    }
+
+    calculator calculator;
+
+    @BeforeEach
+    void setup()
+    {
+        calculator = new calculator();
+    }
+
+    @Test
+    @DisplayName("La semplice moltiplicazione dovrebbe funzionare")
+    void testMultiply()
+    {
+        assertEquals(20, calculator.multiply(4, 5), "regolare moltiplicazione funzionante");
     }
 }
