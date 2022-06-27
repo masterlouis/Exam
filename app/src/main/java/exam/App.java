@@ -14,5 +14,7 @@ public class App {
         int val2 = scanner.nextInt();
 
         System.out.println(Math.min(val1, val2));
+
+        System.out.println("conc".concat("atenzaione"));
     }
 }

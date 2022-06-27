@@ -10,4 +10,26 @@ class AppTest {
     @Test void firstLower() {
         assertEquals(1, Math.min(1, 2));
     }
+   
+
+    private static final String EMPTY = "";
+	private static final String NON_EMPTY = "abc";
+
+    @Test
+	public void testConcat_EmptyEmpty()
+	{
+		assertSame(EMPTY, EMPTY.concat(""));
+	}
+
+    @Test
+    public void testConcat_NonEmptyEmpty() 
+    {
+        assertEquals(NON_EMPTY, EMPTY.concat(NON_EMPTY));
+    }
+
+    @Test
+    public void testConcat_EmptyNonEmpty()
+    {
+        assertEquals("abcabc", NON_EMPTY.concat(NON_EMPTY));
+    }
 }
