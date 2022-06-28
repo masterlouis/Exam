@@ -16,5 +16,9 @@ public class App {
         System.out.println(Math.min(val1, val2));
 
         System.out.println("conc".concat("atenzaione"));
+
+        Persona persona1 = new Persona("aldo", "lops", 14, "blu");
+
+        System.out.println(persona1.nome);
     }
 }

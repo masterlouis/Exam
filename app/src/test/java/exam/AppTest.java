@@ -50,4 +50,27 @@ class AppTest {
     {
         assertEquals(20, calculator.multiply(4, 5), "regolare moltiplicazione funzionante");
     }
+
+    class calculatorTest {
+        
+        calculator calculator;
+
+        @BeforeEach
+        void setup() {
+            calculator = new calculator();
+
+        }
+
+        @Test
+        @DisplayName("simple multiplication should work")
+        void testMultiply() {
+            assertEquals(20, calculator.multiply(5, 4), "regular multiplication");
+        }
+
+        @RepeatedTest(5)
+        @DisplayName("assicura il giusto utilizzo dello 0")
+        void testMultiplyWithZero(){
+            assertEquals(0, calculator.multiply(0, 5), "the result should be zero");
+        }
+    }
 }
