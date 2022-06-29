@@ -1,3 +1,7 @@
 <p align="center">
-  <img src="./Model!Main_0.jpg" alt="diagramma" width="5000"/>
+  <img src="./CD.jpg" alt="diagramma" width="400"/>
+</p>
+
+<p align="center">
+  <img src="./SD.jpg" alt="diagramma" width="400"/>
 </p>
